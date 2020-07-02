@@ -3,14 +3,18 @@
 
 def key_for_min_value(name_hash)
   
-  price= nil 
-  item = nil
+#  price= nil 
+#  item = nil
   
-  name_hash.each do |key, value|
-    if value<price.to_i || price == nil 
-      price = value
-      item = key
-    end
+ # name_hash.each do |key, value|
+  #  if value<price.to_i || price == nil 
+  #    price = value
+  #    item = key
+  #  end
+  #end
+  #item
+  
+  name_hash.min do |key, value|
+    return key
   end
-  item
 end
